@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <!--Header должен располагаться на каждой странице сайта-->
+    <div class="header">
+        <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+        <div class="logo"><p>Caramel bear</p></div>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+    <h1>Контакты</h1>
+    <form action="form.php" method="post">
+        <fieldset>
+            <legend>Напишите нам</legend>
+            <input type="text" placeholder="Введите ваше имя"><br>
+            <input type="email" placeholder="Введите ваш электронный адрес"><br>
+            <input type="text" placeholder="Тема сообщения"><br>
+            <label for="gist">Суть вашего письма:</label><br>
+            <textarea name="massage" id="gist" cols="50" rows="5"></textarea><br>
+            <input type="submit" class="button">
+        </fieldset>
+    </form>
+
+    <h2>Адрес</h2>
+    <p><strong>Тедефон: </strong> +7 922 363 01 65</p>
+    <p><strong>Адрес: </strong> г.Пермь, ул.Монастырская, д.2</p>
+    <p><strong>Email: </strong> Caramel_bear@gmail.com </p>
+
+    <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a035020f10ada10ec62993a9a4e52453b6a8c710d2f46a036612481b26f79f7&amp;width=100%&amp;height=374&amp;lang=ru_RU&amp;scroll=true"></script>
+
+    <footer>
+        <!--Footer должен располагаться на каждой странице сайта-->
+        <div class="footer">
+            <div class="copyrighted">&copy;"Все права защищены"</div>
+        </div>
+
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    font-family: Arial Regular;
+}
+
+.wrapper {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    float: left;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0 0 30px 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    color: #445162;
+}
+
+h2, h6 {
+    text-align: center;
+    color: #445162;
+    margin: 0 0 40px 0;
+}
+
+/* _____________header_____________ */
+header {
+    display: flex;
+    padding: 50px 0;
+    background: #445162;
+    color: white;
+}
+
+header .img {
+    float: right;
+    width: 470px;
+    height: 215px;
+    background: #fff;
+}
+
+header .prodyct {
+    float: left;
+}
+
+header ul {
+    list-style-image: url('../img/marker.png');
+    font-size: 20px;
+    margin: 0;
+}
+
+header ul li {
+    margin-bottom: 10px;
+}
+
+/* _____________content_____________ */
+section {
+    display: flex;
+    padding: 50px 0;
+}
+
+.block2, .block4 {
+    background: #f5f5f5;
+}
+
+.block1 h2 {
+    text-align: left
+}
+
+.block1 .img {
+    float: right;
+    width: 430px;
+    height: 250px;
+    background: #445162;
+}
+
+.block1 .content {
+    float: left;
+    width: 55%;
+}
+
+.block2 .listLeft, .listRight {
+    width: 50%;
+}
+
+.block2 .listLeft {
+    float: left;
+}
+
+.block2 .listRight {
+    float: right;
+}
+
+.block2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.block2 ul li {
+    margin-bottom: 40px;
+}
+
+.block2 ul li img {
+    float: left;
+}
+
+.block2 ul li p {
+    margin: 0 0 0 40px;
+}
+
+.block3 .productUnit {
+    float: left;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.block3 .productUnit:nth-child(2n) {
+    margin-right: 2%;
+}
+
+.block3 .img {
+    float: left;
+    width: 200px;
+    height: 150px;
+    background: #445162;
+}
+
+.block3 h3 {
+    margin-top: 0;
+}
+
+.block3 .text {
+    float: left;
+    width: 360px;
+    margin-left: 10px;
+}
+
+.block4 .reviewBox {
+    float: left;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.block4 .reviewBox:nth-child(2n) {
+    margin-right: 2%;
+}
+
+.block4 .reviewImg {
+    float: left;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #445162;
+}
+
+.block4 .reviewText {
+    margin-left: 100px;
+    padding: 15px;
+    background: #ebebeb;
+    font-style: italic;
+    position: relative;
+}
+
+.block4 .reviewText:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #ebebeb;
+    position: absolute;
+    top: 28px;
+    left: -10px;
+    transform: rotate(45deg);
+}
+
+.block4 .reviewAuthor {
+    margin-top: 10px;
+    color: #a4a4a4;
+}
+
+.block5 .packet {
+    position: relative;
+    float: left;
+    width: 32%;
+    margin: 0 2% 2% 0;
+    background: #445162;
+    border-radius: 10px;
+}
+
+.block5 .standart {
+    bottom: -227px;
+}
+
+.block5 .premium {
+    bottom: -114px;
+}
+
+.block5 .packet:nth-child(4n) {
+    margin-right: 0;
+}
+
+.block5 .packetHeader {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 15px 0;
+}
+
+.block5 .packetPrice {
+    text-align: center;
+    font-size: 40px;
+    color: #445162;
+    background: white;
+    padding: 8px 0;
+    margin: 0 4px;
+}
+
+.block5 .packetIncluded {
+    color: white;
+}
+
+.block5 .packetIncluded ol {
+    margin: 20px 0;
+}
+
+.block5 .packetIncluded li + li {
+    margin-top: 10px;
+}
+
+.block5 .bottom {
+    text-align: center;
+    margin: 20px;
+}
+
+.block5 .bottom a {
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    color: #445162;
+    background: white;
+}
+
+.block6 {
+    background: #445162;
+}
+
+.block6 form {
+    float: left;
+    width: 550px;
+    margin-left: 100px;
+}
+
+.block6 form input, textarea {
+    width: 500px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.block6 .Contacts {
+    float: left;
+    color: white;
+}
+
+.block6 i {
+    float: left;
+}
+
+.block6 .socialNetworks {
+    float: left;
+}
+
+.block6 .socialNetworks a {
+    color: white;
+}
+
+.block6 ul {
+    list-style: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+.block6 li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.block6 p {
+    margin-left: 40px;
+    padding: 8px 0
+}
+
+.block6 .bottom {
+    text-align: center;
+    margin: 10px 30px 0 0;
+}
+
+.block6 .bottom a {
+    text-decoration: none;
+    border-radius: 5px;
+    width: 50px;
+    padding: 10px 50px;
+    color: #445162;
+    background: white;
+}
+
+/* _____________footer_____________ */
+footer {
+    display: flex;
+    padding: 10px 0;
+    background: #f5f5f5;
+}
+
+footer h6 {
+    margin: 0;
+}

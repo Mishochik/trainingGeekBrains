@@ -1,0 +1,308 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #dfe4ea;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    background: #C9D8FF;
+    padding: 8px;
+}
+
+.header {
+    height: 80px;
+    background-image: url(img/topping.jpg);
+}
+
+.header a img {
+    width: 63px;
+    float: left;
+    margin-left: 20px;
+}
+
+.header .logo {
+    float: left;
+    position: relative;
+    height: 80px;
+    width: 200px;
+    margin-left: 50px;
+    color: #3B5AA6;
+    font-size: 30px;
+}
+
+.header .logo p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.header ul {
+    padding: 0;
+    float: right;
+    margin-top: 20px;
+}
+
+.header ul li {
+    display: inline-flex;
+    margin-right: 20px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.header ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.header ul li a {
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.header ul li:hover {
+    border: 1px solid #3B5AA6;
+}
+
+.header ul li:hover a {
+    color: #3B5AA6;
+    text-decoration: underline;
+}
+
+.interior {
+    float: left;
+    margin-right: 10px;
+}
+
+.catalog {
+    text-align: center;
+}
+
+.catalog img {
+    width: 100%;
+    /*border: 2px solid #fff*/
+}
+
+.catalog img:hover {
+    /*border: 2px solid #4158be*/
+}
+
+.description {
+    height: 325px;
+}
+
+.description .img_description {
+    width: 50%;
+    float: left;
+}
+
+.description .text_description {
+    float: right;
+    width: 48%;
+}
+
+.description a.button {
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid red;
+    float: right;
+}
+
+.description a.button:hover {
+    border: 1px solid #3B5AA6;
+    color: #3B5AA6;
+    text-decoration: underline;
+}
+
+.description a.button:focus {
+    background: red;
+    border: 1px solid #3B5AA6;
+    color: #3B5AA6;
+    text-decoration: underline;
+}
+
+.short_description {
+    color: #97A2BF;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.pricing {
+    color: #97A2BF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.short_description:first-letter {
+    color: red;
+    font-size: 30px;
+    font-family: initial;
+}
+
+.decorations, .marker {
+    color: #3B5AA6;
+    font-family: cursive;
+}
+
+.decorations {
+    font-size: 17px;
+}
+
+.marker {
+    list-style-image: url('img/marker.png');
+}
+
+img.dessert {
+    width: 100%;
+    border: 2px solid #3B5AA6;
+}
+
+img.dessert:hover {
+    border-color: transparent;
+}
+
+form fieldset {
+    color: #3B5AA6;
+}
+
+form input[type="text"], input[type="email"] {
+    width: 250px;
+    height: 20px;
+}
+
+form input[type="text"], input[type="email"], textarea {
+    color: #3B5AA6;
+    font-family: cursive;
+    border: 1px solid #3B5AA6;
+    margin: 2px;
+    text-transform: capitalize
+}
+
+form input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    background: #b7cbff;
+}
+
+form input.button {
+    height: 25px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table th, td {
+    border: 1px solid black;
+    height: 40px;
+    text-align: center;
+    background: #b7cbff;
+}
+
+table th {
+    height: 50px;
+    font-size: 18px;
+}
+
+table td[rowspan] {
+    background: red;
+}
+
+table td[colspan] {
+    background: green;
+}
+
+footer {
+    height: 80px;
+    position: relative;
+    margin-top: 10px;
+    background: #97A2BF;
+    float: left;
+    width: 100%;
+}
+
+footer .footer {
+    float: right;
+    width: 240px;
+}
+
+footer .copyrighted {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #484343;
+}
+
+.catalog {
+    width: 100%;
+    float: left;
+}
+
+.product {
+    float: left;
+    width: 32%;
+    margin: 0 2% 2% 0;
+    height: 307.2px;
+    background: #b7cbff;
+}
+
+.product a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.product p {
+    font-size: 24px;
+    margin: 15px 0 0 0;
+    color: #3B5AA6;
+
+}
+
+.product p + p {
+    font-size: 14px;
+    color: #563CA6;
+
+}
+
+.product:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product:first-child {
+    background: #AFFBFF;
+}
+
+.product:last-child {
+    background: #C9B7FF;
+}
