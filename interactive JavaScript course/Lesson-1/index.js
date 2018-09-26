@@ -30,12 +30,12 @@ const films3 = string2.split(';');
 // console.log(films3);
 
 const film1 = {
-    'name': "Тихое место",
-    'money': 2e6
+	'name': "Тихое место",
+	'money': 2e6
 };
 const film2 = {
-    'name': "Фантастические твари и где они обитают",
-    'money': 8e6
+	'name': "Фантастические твари и где они обитают",
+	'money': 8e6
 };
 const films4 = [];
 films4.push(film1, film2);
@@ -58,7 +58,7 @@ let li = [1, 2, 3, 4, 5, 6, 7, 8];
 li.splice(3, 3);
 li.push(10, 5e6);
 const ob = {
-    'numbers': ''
+	'numbers': ''
 };
 const liString = li.join('; ');
 ob.numbers = liString;
