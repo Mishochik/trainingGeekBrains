@@ -40,11 +40,8 @@ header {
     color: white;
 }
 
-header .img {
+header video {
     float: right;
-    width: 470px;
-    height: 215px;
-    background: #fff;
 }
 
 header .prodyct {
@@ -75,11 +72,8 @@ section {
     text-align: left
 }
 
-.block1 .img {
+.block1 video {
     float: right;
-    width: 430px;
-    height: 250px;
-    background: #445162;
 }
 
 .block1 .content {
