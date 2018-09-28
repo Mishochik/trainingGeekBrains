@@ -36,8 +36,11 @@ h2, h6 {
 header {
     display: flex;
     padding: 50px 0;
-    background: #445162;
     color: white;
+    background:
+        linear-gradient(10deg, hsla(214, 17.19%, 19.52%, 1) 0%, hsla(214, 17.19%, 19.52%, 0) 65%),
+        linear-gradient(148deg, hsla(214, 0%, 49.49%, 1) 0%, hsla(214, 0%, 49.49%, 0) 65%),
+        linear-gradient(141deg, hsla(214, 18.07%, 32.55%, 1) 100%, hsla(214, 18.07%, 32.55%, 0) 70%);
 }
 
 header video {
@@ -128,6 +131,10 @@ section {
     background: #445162;
 }
 
+.block3 .img img {
+    width: 100%;
+}
+
 .block3 h3 {
     margin-top: 0;
 }
@@ -142,6 +149,7 @@ section {
     float: left;
     width: 49%;
     margin-bottom: 30px;
+
 }
 
 .block4 .reviewBox:nth-child(2n) {
@@ -154,6 +162,11 @@ section {
     height: 75px;
     border-radius: 50%;
     background: #445162;
+}
+
+.block4 .reviewImg img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 .block4 .reviewText {
@@ -185,8 +198,11 @@ section {
     float: left;
     width: 32%;
     margin: 0 2% 2% 0;
-    background: #445162;
     border-radius: 10px;
+    background:
+        linear-gradient(10deg, hsla(214, 17.19%, 19.52%, 1) 0%, hsla(214, 17.19%, 19.52%, 0) 65%),
+        linear-gradient(148deg, hsla(214, 0%, 49.49%, 1) 0%, hsla(214, 0%, 49.49%, 0) 65%),
+        linear-gradient(141deg, hsla(214, 18.07%, 32.55%, 1) 100%, hsla(214, 18.07%, 32.55%, 0) 70%);
 }
 
 .block5 .standart {
@@ -245,7 +261,14 @@ section {
 }
 
 .block6 {
-    background: #445162;
+    background:
+        linear-gradient(10deg, hsla(214, 17.19%, 19.52%, 1) 0%, hsla(214, 17.19%, 19.52%, 0) 65%),
+        linear-gradient(148deg, hsla(214, 0%, 49.49%, 1) 0%, hsla(214, 0%, 49.49%, 0) 65%),
+        linear-gradient(141deg, hsla(214, 18.07%, 32.55%, 1) 100%, hsla(214, 18.07%, 32.55%, 0) 70%);
+}
+
+.block6 h2 {
+    color: #fff;
 }
 
 .block6 form {
