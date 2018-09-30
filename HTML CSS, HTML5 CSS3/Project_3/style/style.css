@@ -68,7 +68,10 @@ section {
 }
 
 .block2, .block4 {
-    background: #f5f5f5;
+    background: #f5f5f5 url("../img/Без-имени-2.png") repeat-x bottom;
+}
+.block1, .block3 {
+    background:  url("../img/Без-имени-3.png") repeat-x bottom;
 }
 
 .block1 h2 {
