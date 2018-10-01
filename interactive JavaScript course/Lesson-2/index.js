@@ -37,7 +37,6 @@ switch (tel[0]) {
 	// console.log('Неправельно');
 }
 
-
 let success = false;
 let error = 'Неизвестная ошибка';
 if (tel.length == 11) {
@@ -74,7 +73,20 @@ fedorPoints === false && petrPoints === false ? console.log('Ничья, оба 
 			console.log('Ничья, по ' + fedorPoints);
 
 
+// ------------------------
 
+// let fedorPoints = 22;
+// let petrPoints = 19;
+// let message;
 
-
-
+// if (fedorPoints > 21) {
+// 	fedorPoints = false;
+// }
+// if (petrPoints > 21) {
+// 	petrPoints = false;
+// }
+// fedorPoints === false && petrPoints === false ? message = 'Ничья, оба перебор' :
+// 	fedorPoints > petrPoints ? message = 'Победил Fedor ' + fedorPoints :
+// 		petrPoints > fedorPoints ? message = 'Победил Petr ' + petrPoints :
+// 			message = 'Ничья, по ' + fedorPoints;
+// console.log(message);
