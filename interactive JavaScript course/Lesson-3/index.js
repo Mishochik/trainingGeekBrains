@@ -88,6 +88,25 @@ films.forEach(film => money += film['money']);
 for (let i = 10003; i <= 150000; i++) {
     let sum = (i - 1) + (i - 2) + (i - 3);
     if (sum % 100 == 52 && String(i)[1] === '2') {
-        console.log('number = '+ i);
+        console.log('number = ' + i);
     }
 }
+
+
+// ---------- How the teacher decided ----------
+
+const goodNumbers = [];
+let n = 10000;
+while (n < 150000) {
+    let sum = 0;
+    for (let m of [n - 1, n - 2, n - 3]) {
+        sum += m;
+    }
+    if (sum % 100 === 52) {
+        if (String(sum)[1] === '2') {
+            goodNumbers.push(n);
+        }
+    }
+    n++;
+}
+console.log(goodNumbers);
