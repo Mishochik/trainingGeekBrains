@@ -6601,3 +6601,63 @@ a.text-dark:focus, a.text-dark:hover {
     border-color: #dee2e6; } }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
+body {
+  font-family: Montserrat; }
+
+.slaider p, .slaider h5 {
+  margin: 0; }
+
+.slaider .title {
+  font-family: Raleway;
+  font-size: 52px;
+  font-weight: 800; }
+
+.slaider .subtitle {
+  font-family: Raleway;
+  font-size: 36px; }
+
+.carouselCaption {
+  bottom: 35%; }
+
+body .btn {
+  margin-top: 50px;
+  color: #fff;
+  background: #998675;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px 35px; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40px;
+  color: #fff; }
+  header a {
+    text-decoration: none;
+    color: #fff; }
+  header a:hover {
+    text-decoration: none;
+    color: #998675; }
+  header .logo {
+    float: left; }
+    header .logo .logoText, header .logo .logoImg {
+      float: left; }
+    header .logo .logoText {
+      font-family: Raleway;
+      font-size: 34px;
+      padding: 3px 0; }
+  header ul {
+    margin: 0;
+    padding: 17px 0;
+    font-size: 14px;
+    text-transform: capitalize; }
+    header ul li {
+      display: inline-block; }
+    header ul li + li {
+      margin-left: 20px; }
+  header .icon {
+    padding: 16px 0; }
+    header .icon a + a {
+      margin-left: 20px; }

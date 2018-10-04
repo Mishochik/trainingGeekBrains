@@ -1,9 +1,100 @@
 @import "./node_modules/bootstrap/dist/css/bootstrap.min";
 
+$white: #fff;
+$black: #000;
+
+$lightBrown:#c7b299;
+$brown: #998675;
+$lighGgray: #8c8c8c;
+$gray: #555;
+
+
+
+
+body{
+	font-family: Montserrat;
+}
+
+.slaider {
+	p, h5 {
+		margin: 0;
+	}
+	.title {
+		font-family: Raleway;
+		font-size: 52px;
+		font-weight: 800;
+	}
+	.subtitle {
+		font-family: Raleway;
+		font-size: 36px;
+	}
+}
+
+
+// -------------------- rewrotBbootstrap --------------------
+.carouselCaption {
+	bottom: 35%;
+}
+
+body{
+	.btn {
+		margin-top: 50px;
+		color: $white;
+		background: $brown;
+		font-size: 14px;
+		text-transform: uppercase;
+		padding: 15px 35px;
+	}
+}
 
 
 // -------------------- header --------------------
-
+header {
+	position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+	padding-top: 40px;
+	color: $white;
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+	a:hover {
+		text-decoration: none;
+		color: $brown;
+	}
+	.logo{
+		float: left;
+		.logoText, .logoImg {
+			float: left;
+		}
+		.logoText {
+			font-family: Raleway;
+			font-size: 34px;
+			padding: 3px 0;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 17px 0;
+		font-size: 14px;
+		text-transform: capitalize;
+		li {
+			display:inline-block;
+			
+		}
+		li + li {
+			margin-left: 20px;
+		}
+	}
+	.icon {
+		padding: 16px 0;
+		a + a {
+			margin-left: 20px;
+		}
+	}
+}
 
 
 // -------------------- content --------------------
@@ -11,3 +102,4 @@
 
 
 // -------------------- footer --------------------
+
