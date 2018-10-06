@@ -6604,28 +6604,48 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   font-family: Montserrat; }
 
+.customButton {
+  color: #fff;
+  background: #998675;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 30px; }
+
+.textCenter {
+  text-align: center; }
+
+h3 {
+  font-family: Raleway;
+  font-size: 52px; }
+
+h4 {
+  font-family: Raleway;
+  font-size: 30px; }
+
+h5 {
+  font-family: Raleway;
+  font-size: 22px; }
+
+h6 {
+  font-family: Raleway;
+  font-size: 20px; }
+
+.carouselCaption {
+  bottom: 35%; }
+
 .slaider p, .slaider h5 {
   margin: 0; }
 
-.slaider .title {
-  font-family: Raleway;
-  font-size: 52px;
+.slaider h3 {
   font-weight: 800; }
 
 .slaider .subtitle {
   font-family: Raleway;
   font-size: 36px; }
 
-.carouselCaption {
-  bottom: 35%; }
-
-body .btn {
-  margin-top: 50px;
-  color: #fff;
-  background: #998675;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 15px 35px; }
+.slaider .slaiderButton {
+  margin-top: 50px; }
 
 header {
   position: absolute;
@@ -6637,9 +6657,9 @@ header {
   header a {
     text-decoration: none;
     color: #fff; }
-  header a:hover {
-    text-decoration: none;
-    color: #998675; }
+    header a:hover {
+      text-decoration: none;
+      color: #998675; }
   header .logo {
     float: left; }
     header .logo .logoText, header .logo .logoImg {
@@ -6661,3 +6681,172 @@ header {
     padding: 16px 0; }
     header .icon a + a {
       margin-left: 20px; }
+
+.services {
+  text-align: center;
+  padding: 80px 0;
+  color: #555; }
+  .services .hover:hover i, .services .hover:hover h5 {
+    color: #998675; }
+  .services .hover:hover .indicator {
+    opacity: 1; }
+  .services h5 {
+    margin: 30px 0 25px 0; }
+  .services p {
+    font-size: 14px;
+    margin-bottom: 25px; }
+  .services .indicator {
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #998675;
+    opacity: 0.5; }
+
+.implementationIdeas {
+  text-align: center;
+  background: #fbfaf8;
+  color: #555; }
+  .implementationIdeas h4 {
+    margin: 80px 0 30px 0; }
+  .implementationIdeas p {
+    font-size: 16px;
+    width: 770px;
+    margin: auto;
+    color: #8c8c8c; }
+  .implementationIdeas img {
+    position: absolute;
+    bottom: 0; }
+    .implementationIdeas img.left {
+      left: -30px; }
+    .implementationIdeas img.right {
+      right: -30px; }
+    .implementationIdeas img.center {
+      transform: translateX(-50%); }
+  .implementationIdeas .compensationImg {
+    height: 715px; }
+
+.textBoxes {
+  background-image: repeating-linear-gradient(to right, #211b19 -0.2%, #4e3427 100%); }
+  .textBoxes h4 {
+    color: #fff;
+    margin: 0; }
+    .textBoxes h4 span {
+      color: #998675; }
+  .textBoxes p {
+    color: #615855;
+    margin: 0; }
+  .textBoxes .textBoxesButton {
+    margin-top: 5px; }
+  .textBoxes .textBoxesPadding {
+    padding: 50px 0; }
+
+.latestProjects {
+  padding: 80px 0; }
+  .latestProjects .latestProjectsTitle {
+    text-align: center;
+    color: #555; }
+    .latestProjects .latestProjectsTitle h4 {
+      margin-bottom: 20px; }
+    .latestProjects .latestProjectsTitle p {
+      margin-bottom: 40px; }
+  .latestProjects .latestProjectsMenu {
+    text-align: center; }
+    .latestProjects .latestProjectsMenu ul {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      margin-bottom: 40px; }
+      .latestProjects .latestProjectsMenu ul li {
+        display: inline-block;
+        border: solid 1px #8c8c8c;
+        border-radius: 5px; }
+        .latestProjects .latestProjectsMenu ul li a {
+          display: inline-block;
+          text-decoration: none;
+          padding: 5px 20px;
+          color: #555; }
+        .latestProjects .latestProjectsMenu ul li + li {
+          margin-left: 10px; }
+        .latestProjects .latestProjectsMenu ul li:hover {
+          border: solid 1px #998675;
+          background: #998675; }
+          .latestProjects .latestProjectsMenu ul li:hover a {
+            text-decoration: none;
+            color: #fff; }
+  .latestProjects .wrapper {
+    position: relative;
+    height: 379px; }
+    .latestProjects .wrapper .bgImg {
+      position: absolute;
+      height: 235px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      display: none;
+      text-align: center; }
+      .latestProjects .wrapper .bgImg a {
+        display: inline-block;
+        color: #fff;
+        margin-top: 30%; }
+        .latestProjects .wrapper .bgImg a:hover {
+          color: #998675; }
+      .latestProjects .wrapper .bgImg a + a {
+        margin-left: 20px; }
+    .latestProjects .wrapper img {
+      position: absolute;
+      width: 100%; }
+    .latestProjects .wrapper .signature {
+      padding: 30px;
+      position: relative;
+      top: 235px;
+      background: #fbfaf8; }
+      .latestProjects .wrapper .signature h6 {
+        color: #998675;
+        margin-bottom: 10px; }
+      .latestProjects .wrapper .signature p {
+        font-size: 14px;
+        color: #555;
+        margin: 0; }
+    .latestProjects .wrapper:hover .bgImg {
+      display: inline; }
+    .latestProjects .wrapper:hover .signature {
+      background: #362f2d; }
+      .latestProjects .wrapper:hover .signature h6 {
+        color: #fff; }
+      .latestProjects .wrapper:hover .signature p {
+        color: #998675; }
+  .latestProjects .latestProjectsButton {
+    margin-top: 30px; }
+
+.mobileDevices {
+  font-size: 15px; }
+  .mobileDevices .float {
+    float: right; }
+  .mobileDevices h4 {
+    margin: 115px 0 25px 0; }
+  .mobileDevices p {
+    margin-bottom: 35px; }
+  .mobileDevices ul {
+    margin: 0;
+    padding-left: 50px; }
+    .mobileDevices ul li {
+      list-style: none;
+      margin-bottom: 10px; }
+      .mobileDevices ul li img {
+        margin-right: 30px; }
+
+.counters {
+  background-image: repeating-linear-gradient(to right, #211b19 -0.2%, #4e3427 100%);
+  height: 300px; }
+
+.recentPosts {
+  height: 750px; }
+
+.partners img {
+  width: 100%; }
+
+footer {
+  background: #191919;
+  height: 620px; }
