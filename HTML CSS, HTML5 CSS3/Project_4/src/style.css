@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6686,6 +6687,49 @@ header {
   text-align: center;
   padding: 80px 0;
   color: #555; }
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px); }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px); }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px); }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px); }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px); }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px); }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+  .services .hover:hover i {
+    animation: swing 0.6s ease;
+    animation-iteration-count: 1; }
   .services .hover:hover i, .services .hover:hover h5 {
     color: #998675; }
   .services .hover:hover .indicator {
@@ -6838,14 +6882,36 @@ header {
         margin-right: 30px; }
 
 .counters {
-  background-image: repeating-linear-gradient(to right, #211b19 -0.2%, #4e3427 100%);
-  height: 300px; }
+  text-align: center;
+  padding: 60px 0;
+  background-image: repeating-linear-gradient(to right, #211b19 -0.2%, #4e3427 100%); }
+  .counters .icon {
+    color: #998675; }
+  .counters .quantity {
+    font-size: 48px;
+    font-weight: 200;
+    margin-top: 10px;
+    color: #fff; }
+  .counters .category {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #998675;
+    margin-bottom: 25px; }
+  .counters .underscore {
+    height: 2px;
+    width: 30px;
+    margin: 0 auto;
+    background: #fff; }
 
 .recentPosts {
   height: 750px; }
+  .recentPosts h4, .recentPosts p {
+    text-align: center; }
 
-.partners img {
-  width: 100%; }
+.partners {
+  background-image: url("/img/Без-имени-13-2.jpg");
+  height: 490px; }
 
 footer {
   background: #191919;
