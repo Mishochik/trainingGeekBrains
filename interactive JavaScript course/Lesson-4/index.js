@@ -72,4 +72,19 @@ function foo(...numbers) {
 
 foo(5, 2);
 foo(5);
-foo(2, 1, 3, 4); 
+foo(2, 1, 3, 4);
+
+
+// ---------- Рекурсия ----------
+// let n = 1;
+// function foo(m) {
+//     if (m === undefined) {
+//         return n;
+//     }
+//     n = n * m;
+//     return foo;
+// }
+
+// console.log(foo(5)(2)());
+// console.log(foo(5)());
+// console.log(foo(2)(1)(3)(4)());
