@@ -13,6 +13,7 @@ $lighGray: #8c8c8c;
 $gray: #555;
 $darkGray: #362f2d;
 
+$highlight: #01b7e9;
 
 $bg: #fbfaf8;
 $darkBg: #191919;
@@ -369,8 +370,15 @@ header {
 	}
 }
 
+.video {
+	img {
+		width: 100%;
+	}
+}
+
 .mobileDevices {
 	font-size: 15px;
+	margin-top: 80px;
 	.float {
 		float: right;
 	}
@@ -431,9 +439,10 @@ header {
 }
 
 .partners {
-	background-image: url("/img/Без-имени-13-2.jpg");
+	background-image: url("/img/Без-имени-13.jpg");
 	height: 490px;
 }
+
 
 
 
@@ -441,5 +450,76 @@ header {
 
 footer {
 	background: $darkBg;
-	height: 620px;
+	color: $gray;
+	p {
+		margin: 0;
+	}
+	.footer {
+		padding: 80px 0;
+		.logo {
+			float: left;
+			width: 100%;
+			color: $white;
+			margin-bottom: 20px; 
+			.logoImg {
+				float: left;
+			}
+			.logoText {
+				float: left;
+				font-size: 34px;
+				font-family: Raleway;
+				margin: 5px 0;
+			}
+		}
+		.text {
+			font-size: 14px;
+		}
+		.title {
+			font-size: 24px;
+			font-family: Raleway;
+			font-weight: 600;
+			color: $white;
+			margin-bottom: 20px; 
+		}
+		.post {
+			padding-bottom: 20px;
+			&+.post {
+				border-top: 1px solid $gray;
+				padding-top: 20px;
+			} 
+			&:nth-last-child(1) {
+				padding-bottom: 0;
+			}
+			&:hover {
+				.text {
+					color: $brown;					
+				}
+				.date {
+					color: $white;
+				}
+			}
+			.text {
+				font-size: 14px;
+			}
+			.date {
+				font-size: 12px;
+				color: $darkGray;
+			}
+			.highlight {
+				color: $highlight;
+			}
+		}
+		.widgetImg {
+			float: left;
+			width: 48%;
+			margin-bottom: 10px;
+			&:nth-child(even){
+				margin-left: 10px;
+			}
+			img {
+				width: 100%;
+				height: 100px;
+			}
+		}
+	}	
 }

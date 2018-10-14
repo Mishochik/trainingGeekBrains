@@ -6864,8 +6864,12 @@ header {
   .latestProjects .latestProjectsButton {
     margin-top: 30px; }
 
+.video img {
+  width: 100%; }
+
 .mobileDevices {
-  font-size: 15px; }
+  font-size: 15px;
+  margin-top: 80px; }
   .mobileDevices .float {
     float: right; }
   .mobileDevices h4 {
@@ -6910,9 +6914,60 @@ header {
     text-align: center; }
 
 .partners {
-  background-image: url("/img/Без-имени-13-2.jpg");
+  background-image: url("/img/Без-имени-13.jpg");
   height: 490px; }
 
 footer {
   background: #191919;
-  height: 620px; }
+  color: #555; }
+  footer p {
+    margin: 0; }
+  footer .footer {
+    padding: 80px 0; }
+    footer .footer .logo {
+      float: left;
+      width: 100%;
+      color: #fff;
+      margin-bottom: 20px; }
+      footer .footer .logo .logoImg {
+        float: left; }
+      footer .footer .logo .logoText {
+        float: left;
+        font-size: 34px;
+        font-family: Raleway;
+        margin: 5px 0; }
+    footer .footer .text {
+      font-size: 14px; }
+    footer .footer .title {
+      font-size: 24px;
+      font-family: Raleway;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 20px; }
+    footer .footer .post {
+      padding-bottom: 20px; }
+      footer .footer .post + .post {
+        border-top: 1px solid #555;
+        padding-top: 20px; }
+      footer .footer .post:nth-last-child(1) {
+        padding-bottom: 0; }
+      footer .footer .post:hover .text {
+        color: #998675; }
+      footer .footer .post:hover .date {
+        color: #fff; }
+      footer .footer .post .text {
+        font-size: 14px; }
+      footer .footer .post .date {
+        font-size: 12px;
+        color: #362f2d; }
+      footer .footer .post .highlight {
+        color: #01b7e9; }
+    footer .footer .widgetImg {
+      float: left;
+      width: 48%;
+      margin-bottom: 10px; }
+      footer .footer .widgetImg:nth-child(even) {
+        margin-left: 10px; }
+      footer .footer .widgetImg img {
+        width: 100%;
+        height: 100px; }
