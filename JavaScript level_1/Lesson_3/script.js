@@ -74,4 +74,22 @@ function building() {
 }
 building();
 
+// Решение первого задания от преаодавателя 
+function isSimple(num) {
+    let i = 2;
+    while (i < num / 2) {
+        if (num % i == 0) {
+            return false;
+        }
+        i++
+    }
+    return true;
+}
 
+let num = 2;
+while (num <= 100) {
+    if (isSimple(num)) {
+        document.write(num + " ");
+    }
+    num++
+}
