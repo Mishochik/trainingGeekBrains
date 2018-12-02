@@ -4,137 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Киноучет</title>
-
-    <style>
-        body {
-            background: #efefef;
-        }
-
-        section {
-            width: 500px;
-            margin: 60px auto;
-            background: none;
-        }
-
-        .categories,
-        .films {
-            border: solid #ddd 1px;
-            margin: 15px 0;
-            background: white;
-        }
-
-        .category {
-            padding: 15px 15px;
-            cursor: pointer;
-            transition: background 1s;
-        }
-
-        .category:hover {
-            background: rgba(221, 221, 230, 0.5);
-        }
-
-        .categories {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        .film {
-            margin: 20px 10px;
-            padding-bottom: 10px;
-            padding-left: 5px;
-            border-bottom: dotted #333 1px;
-        }
-
-        .filmName {
-            cursor: pointer;
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-
-        .filmName:hover {
-            margin-bottom: 7px;
-            border-bottom: double rgba(221, 221, 230, 0.5) 3px;
-        }
-
-        .filmComment {
-            color: #333;
-        }
-
-        .commentAutor {
-            font-weight: 700;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section>
         <div class="categories">
             <!-- Заполняет JS
-            <div class="category" onclick="onCategoryChoice('Юмор')">Юмор</div>
-            <div class="category" onclick="onCategoryChoice('Хоррор')">Хоррор</div> -->
+        <div class="category" onclick="onCategoryChoice('Юмор')">Юмор</div>
+        <div class="category" onclick="onCategoryChoice('Хоррор')">Хоррор</div> -->
         </div>
         <div class="films">
             <!-- Заполняет JS
-            <div class="film">Титаник</div>
-            <div class="film">Один дома</div>-->
+        <div class="film">Титаник</div>
+        <div class="film">Один дома</div>-->
         </div>
     </section>
 
     <script src="script.js"></script>
-    <script>
-        const opennendFilns = {};
-
-        document.addEventListener("DOMContentLoaded", function () {
-            for (let category of categories) {
-                const newEl = document.createElement("div");
-                newEl.classList.add("category");
-                newEl.innerText = category;
-                newEl.addEventListener("click", function () {
-                    onCategoryChoice(category);
-                });
-                document.querySelector(".categories").appendChild(newEl);
-            }
-        });
-
-        function getFilmComments(filmName) {
-            const film = films.filter(f => f.name === filmName)[0];
-            return film.comments
-        }
-
-        function onCategoryChoice(categoryName) {
-            document.querySelector(".films").innerHTML = "";
-            const films = getFilmsByCategory(categoryName);
-            for (let film of films) {
-                const newEl = document.createElement("div");
-                newEl.classList.add("film");
-                newEl.innerHTML = `<div class="filmName">${film.name}</div>`;
-
-                newEl.addEventListener("click", function () {
-                    if (opennendFilns.hasOwnProperty(film.name) && opennendFilns[film.name] === true) {
-                        newEl.innerHTML = `<div class="filmName">${film.name}</div>`;
-                        opennendFilns[film.name] = false;
-                        return;
-                    }
-                    const comments = getFilmComments(film.name);
-                    let s = "";
-                    comments.forEach(c => {
-                        s += `<div class="comment"><span class="commentAutor">${c.autor}</span>: ${c.text}</div>`;
-                    })
-                    newEl.innerHTML += `<div class="filmComment">${s}</div>`;
-
-                    const addCommentButton = document.createElement("button");
-                    addCommentButton.innerText = "Добавить отзыв";
-                    newEl.appendChild(addCommentButton);
-
-                    opennendFilns[film.name] = true;
-                });
-
-                document.querySelector(".films").appendChild(newEl);
-            }
-        }
-    </script>
+    <script src="dom-logic.js"></script>
 </body>
 
 </html>
