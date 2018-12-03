@@ -1,4 +1,4 @@
-var event, ok;
+var event, ok, saveAnswers = {};
 
 do {//Выводим первый вопрос
     ok = false;
@@ -12,6 +12,7 @@ do {//Выводим первый вопрос
 } while (!ok);
 switch (event) {
     case 1: // Первое действие  - если в первом окне ввели 1 то открываем серию окон - окно 2
+        saveAnswers['firstWindow'] = works.a00 + works.a1;
         do {
             ok = false;
             event = +prompt(works.b00 + works.b1 + works.b2 + '-1 - Выход из игры');
@@ -24,9 +25,18 @@ switch (event) {
         } while (!ok);
         switch (event) {
             case 1: // Второе действие, если во 2 окне ввели 1 то переходим на 4 окно
+                saveAnswers['secondWindow'] = works.b00 + works.b1;
                 do {
                     ok = false;
                     event = +prompt(works.d00 + works.d1 + works.d2 + '-1 - Выход из игры');
+                    switch (event) {
+                        case 1:
+                            saveAnswers['thirdWindow'] = works.d00 + works.d1;
+                            break;
+                        case 2:
+                            saveAnswers['thirdWindow'] = works.d00 + works.d2;
+                            break;
+                    }
                     if (event == -1) {
                         break;
                     }
@@ -37,9 +47,18 @@ switch (event) {
 
                 break;
             case 2: // Второе действие   Если ввели 2 то также переходим на 4 окно
+                saveAnswers['secondWindow'] = works.b00 + works.b2;
                 do {
                     ok = false;
                     event = +prompt(works.d00 + works.d1 + works.d2 + '-1 - Выход из игры');
+                    switch (event) {
+                        case 1:
+                            saveAnswers['thirdWindow'] = works.d00 + works.d1;
+                            break;
+                        case 2:
+                            saveAnswers['thirdWindow'] = works.d00 + works.d2;
+                            break;
+                    }
                     if (event == -1) {
                         break;
                     }
@@ -56,6 +75,7 @@ switch (event) {
         }
         break;
     case 2: // Первое действие    Если в 1 окне ввели 2 то переходим к 3 окну
+        saveAnswers['firstWindow'] = works.a00 + works.a2;
         do {
             ok = false;
             event = +prompt(works.c00 + works.c1 + works.c2 + '-1 - Выход из игры');
@@ -68,9 +88,18 @@ switch (event) {
         } while (!ok);
         switch (event) {
             case 1: // Второе действие
+                saveAnswers['secondWindow'] = works.b00 + works.b1;
                 do {
                     ok = false;
                     event = +prompt(works.d00 + works.d1 + works.d2 + '-1 - Выход из игры');
+                    switch (event) {
+                        case 1:
+                            saveAnswers['thirdWindow'] = works.d00 + works.d1;
+                            break;
+                        case 2:
+                            saveAnswers['thirdWindow'] = works.d00 + works.d2;
+                            break;
+                    }
                     if (event == -1) {
                         break;
                     }
@@ -81,9 +110,18 @@ switch (event) {
 
                 break;
             case 2: // Второе действие
+                saveAnswers['secondWindow'] = works.b00 + works.b2;
                 do {
                     ok = false;
                     event = +prompt(works.d00 + works.d1 + works.d2 + '-1 - Выход из игры');
+                    switch (event) {
+                        case 1:
+                            saveAnswers['thirdWindow'] = works.d00 + works.d1;
+                            break;
+                        case 2:
+                            saveAnswers['thirdWindow'] = works.d00 + works.d2;
+                            break;
+                    }
                     if (event == -1) {
                         break;
                     }
@@ -105,6 +143,20 @@ switch (event) {
         alert('Ошибка');
 }
 alert('Спасибо за игру');
+var checkYourself = +prompt('Проверь себя, посмотри свой ответ на определенном шаге.');
+if (isAnswer(3, checkYourself)) {
+    switch (checkYourself) {
+        case 1:
+            alert(saveAnswers.firstWindow);
+            break;
+        case 2:
+            alert(saveAnswers.secondWindow);
+            break;
+        case 3:
+            alert(saveAnswers.thirdWindow);
+            break;
+    }
+}
 
 //------------------------------------------
 function isAnswer(q, event) {
