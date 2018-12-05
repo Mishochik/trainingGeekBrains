@@ -56,3 +56,33 @@ function conversion(number) {
 }
 
 console.log(conversion('-123'));
+
+
+// Решение от преподавателя
+var num1 = prompt("Введите число то 0 да 999:"),
+    munLen = num1.length;
+obj = {};
+false(num1);
+
+function f(num) {
+    if (num < 0 || num > 999) {
+        console.log("Число" + num + "вне диапазона 0 - 999");
+        return obj;
+    } else {
+        switch (numLen) {
+            case 3:
+                obj.units = num[2];
+                obj.tens = num[1];
+                obj.hundreds = num[0];
+                break;
+            case 2:
+                obj.units = num[1];
+                obj.tens = num[0];
+                break;
+            default:
+                obj.units = num[1];
+        }
+        console.log(obj);
+        return obj;
+    }
+}
