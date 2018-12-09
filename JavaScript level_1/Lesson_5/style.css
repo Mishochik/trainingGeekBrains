@@ -14,4 +14,63 @@
 
 .bg {
     background: black;
+} 
+
+.whitePawn {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -582px -95px;
+}
+
+.whiteRook {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -250px -95px;
+}
+
+.whiteHorse {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -470px -95px;
+}
+
+.whiteElephant {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -360px -95px;
+}
+
+.whiteQueen {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -138px -95px;
+}
+
+.whiteKing {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -27px -95px;
+}
+
+.blackPawn {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -582px -3px;
+}
+.blackRook {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -250px -3px;
+}
+
+.blackHorse {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -470px -3px;
+}
+
+.blackElephant {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -360px -3px;
+}
+
+.blackQueen {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -138px -3px;
+}
+
+.blackKing {
+    background-image: url(img/сhess_symbols_set_.png);
+    background-position: -27px -3px;
 }
