@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .message {
+            width: 300px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .myMessage {
+            background: lightblue;
+        }
+        .answer {
+            background: lightgreen;
+        }
+        .field {
+            width: 40%;
+            height: 60vh;
+            overflow-y: auto;
+            background: #444;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="field">
+
+    </div>
+    <script>
+        class Message {
+            constructor () {
+                this.name = 'Me'
+                this.text = prompt ('Enter message')
+            }
+            _renderMsg () {
+                return `
+                        <div class="myMessage"><h2>${this.name}</h2> <hr> <p>${this.text}</p></div>
+                `
+            }
+            place () {
+                let a = `${document.querySelector ('.field').innerHTML += this._renderMsg ()}`
+                document.querySelector ('.field').innerHTML = a
+            }
+        }
+
+        class Answer {
+            constructor () {
+                this.name = 'Дуров'
+                this.text = 'Нет'
+            }
+            _renderMsg () {
+                return `
+                        <div class="answer"><h2>${this.name}</h2> <hr> <p>${this.text}</p></div>
+                `
+            }
+            place () {
+                let a = `${document.querySelector ('.field').innerHTML += this._renderMsg ()}`
+                document.querySelector ('.field').innerHTML = a
+            }
+        }
+        // class Human {
+        //     constructor (name, salary) {
+        //         this.name = name
+        //         this.salary = salary
+        //     }
+        //     goWork () {
+        //         console.log (`${this.name} goes work and gets ${this._askTime () * this.salary} roubles`)
+        //     }
+        //     _askTime () {
+        //         return +prompt ('Сколько времени потратить на работу?')
+        //     }
+        // }
+
+
+        // let smth = new Human ('Oleg', 4500)
+        // let smth2 = new Human ('Olga', 750)
+
+
+    </script>
+</body>
+</html>
